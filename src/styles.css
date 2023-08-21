@@ -1,0 +1,86 @@
+
+* {
+  margin: 0;
+  padding: 0;
+ 
+}
+
+.App {
+  display: flex;
+  height: 50vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.userlist-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 350px; 
+}
+.userlist-container {
+  grid-template-columns: 2fr 2fr;
+  gap: 20px 30px;
+}
+.user-container {
+  background-color: rgb(111, 198, 209);
+  height: 200px;
+  width: auto;
+  border-radius: 10px;
+  display: flex;
+  border: 0.2px solid black;
+  transition: 0.3s;
+  
+}
+.user-container:hover {
+  scale: 1.1;
+}
+.userDetail {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgb(60, 141, 228) 0px 20px 30px -10px;
+}
+
+button {
+  appearance: none;
+  background-color: #6f94f9;
+  border-radius: 40em;
+  border-style: none;
+  box-shadow: #97cbf0 0 -6px 6px inset;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -.24px;
+  /* margin-top: 10px; */
+  outline: none;
+  padding: 1rem 1.3rem;
+  quotes: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: all .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-bottom: 30px;
+}
+button:hover {
+  background-color: #62b27d;
+  box-shadow: #FF6314 0 -6px 8px inset;
+  transform: scale(1.125);
+}
+
+.error {
+  color: red;
+}
+
+button:active {
+  transform: scale(1.025);
+}
